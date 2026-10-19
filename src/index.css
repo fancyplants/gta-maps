@@ -61,6 +61,11 @@ button {
   background: #0e0f12;
 }
 
+/* Standard OSM tiles, inverted into a dark radar look. Overlays (route, blips) are unaffected. */
+.leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9) saturate(0.35);
+}
+
 .leaflet-container {
   font-family: var(--hud-font);
 }

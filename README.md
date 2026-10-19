@@ -31,7 +31,7 @@ It's for fun. Please don't drive like this.
 
 ## Data sources
 
-- Map tiles: © OpenStreetMap contributors, © CARTO
+- Map tiles: © OpenStreetMap contributors (standard tiles, darkened with a CSS filter)
 - Routing: [OSRM](https://project-osrm.org) public demo server
 - Search: [Photon](https://photon.komoot.io) by komoot
 

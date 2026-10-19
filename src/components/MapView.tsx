@@ -41,10 +41,9 @@ export function MapView({ from, to, path, gtaCar, legalCar, onMapClick }: Props)
     <MapContainer className="map" center={[34.05, -118.3]} zoom={11} zoomControl={false} attributionControl={false}>
       <AttributionControl position="topright" prefix={false} />
       <TileLayer
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a> · Routing <a href="https://project-osrm.org">OSRM</a> · Search <a href="https://photon.komoot.io">Photon</a>'
-        subdomains="abcd"
-        maxZoom={20}
+        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Routing <a href="https://project-osrm.org">OSRM</a> · Search <a href="https://photon.komoot.io">Photon</a>'
+        maxZoom={19}
       />
       <ClickHandler onClick={onMapClick} />
       <FitToRoute path={path} />
